@@ -51,6 +51,7 @@ import Board      from './pages/Board';
 import Sprints    from './pages/Sprints';
 import AllSprints from './pages/Allsprints';
 import MyTasks    from './pages/MyTasks';
+import Footer     from './components/common/footer';
 
 const App = () => (
   <AuthProvider>
@@ -68,6 +69,7 @@ const App = () => (
         <Route path="/project/:id/sprints" element={<ProtectedRoute><Sprints /></ProtectedRoute>} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   </AuthProvider>
 );
