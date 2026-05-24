@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || "https://jira-clone-8x1v.onrender.com",
+  baseURL: import.meta.env.VITE_API_URL || "https://jira-clone-1-jeiw.onrender.com/api",
 });
 
 // Automatically attach JWT token to every request
